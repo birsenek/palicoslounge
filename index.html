@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Palico´s Lounge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="_css/index.css">
+</head>
+<body>
+
+    <!--Menu de Navegação-->
+  <div class="navbar_menu">
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html" style="font-family:'monster_hunterregular';">Palico´s Lounge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mapa.html">Encontros Presenciais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loja.html">Loja Virtual</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Caçadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+          </li>   
+        </ul>
+      </div>  
+    </nav>
+  </div>
+
+    <!-- JUMBOTRON-->
+  <div class="jumbotron text-center">
+    <h1 class="titulo">Palico's Lounge</h1>
+    <p style="text-decoration:underline" style="font-family: sans-serif;">A maior comunidade brasiliera de Monster Hunter World</p> 
+  </div> 
+
+     <!-- Carousel e Dicas do Dia -->
+  <div class="container">
+    <div class="row">
+
+      <!--Dicas do Dia-->
+      <div class="col-sm-4">
+        <header class="Dica_Do_Dia">
+          <img src="_img/palicotips.jpg" class="rounded-circle img-fluid" alt="Dica do Dia" title="Dica do Dia">
+          <figcaption style="padding-left:20px; padding-top:10px;" >
+            <button type="button" class="btn btn-warning titulo" data-toggle="collapse" data-target="#demo" style="font-size:20px;">Dica do Dia</button>
+            <div id="demo" class="collapse">
+            <p style="padding-top:10px;">Não se esqueça de afiar sua lâmina antes do combate!</p>
+            </div> 
+          </figcaption>   
+        </header>
+        <br>
+      </div>
+      
+     
+        <!--Carousel-->
+      <div class="col-sm-8">
+      <div id="noticias" class="carousel slide" data-ride="carousel" >
+
+          <!-- Indicators -->
+        <ul class="carousel-indicators" >
+          <li data-target="#noticias" data-slide-to="0" class="active"></li>
+          <li data-target="#noticias" data-slide-to="1"></li>
+          <li data-target="#noticias" data-slide-to="2"></li>
+        </ul>
+        
+          <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="_img/kirin_sm.jpg" class="img-fluid mx-auto d-block" width="100%" alt="Kirin o Deus do Trovão">
+            <div class="carousel-caption">
+              <h3 class="titulo">Kirin, o Deus do Trovão</h3>
+              <p>Saiba mais sobre este poderoso dragão ancião!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="_img/cooking_sm.jpg" class="img-fluid mx-auto d-block" width="100%" alt="Novas receitas!">
+            <div class="carousel-caption">
+              <h3 class="titulo">Receitas de Astera</h3>
+              <p>Cozinhe coxa de Aptonoth em qualquer lugar!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="_img/fishing_sm.jpg" class="img-fluid mx-auto d-block" width="100%" alt="Top 10 dicas para relaxar no feriado!">
+            <div class="carousel-caption">
+              <h3 class="titulo">Grande Marlin</h3>
+              <p>5 dicas de pesca para relaxar no feriado</p>
+            </div>
+          </div>
+        </div>
+        
+          <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#noticias" data-slide="prev" >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#noticias" data-slide="next" >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <br>
+      <!-- CARD-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+          <div class="destaque_card" >
+              <img class="card-img-top" src="_img/bk.jpg" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title titulo">Destaque da Semana</h4>
+                <p class="card-text">Birsenek Games: Recorde mundial em um duelo inesquecível contra o poderoso dragão ancião Kirin</p>
+                <a href="https://www.youtube.com/birsenek" class="btn btn-danger titulo stretched-link" style="font-size:20px;">Acesse o canal</a>
+              </div>
+          </div>
+      </div> 
+      <div class="col-sm-8">
+        <p>Segundo a Wikipedia:</p>
+        <blockquote cite="https://pt.wikipedia.org/wiki/Monster_Hunter:_World">
+        <p>Monster Hunter: World é um jogo de ação desenvolvido e publicado pela Capcom. O jogo faz parte da série Monster Hunter, foi lançado em todo o mundo para o PlayStation 4 e Xbox One em janeiro de 2018, com uma versão para o Windows sendo agendada para o final do ano. No jogo, o jogador assume o papel de um Caçador, encarregado de caçar e matar ou atrapalhar monstros que vagam em um dos vários espaços ambientais. Se for bem sucedido, o jogador é recompensado através de pilhais constituídos por partes do monstro e outros elementos que são usados para fabricar armas e armaduras, entre outros equipamentos. O loop principal do jogo faz com que o jogador crie equipamentos adequados para poder caçar monstros mais difíceis, que por sua vez fornecem peças que levam a uma engrenagem mais poderosa. Os jogadores podem caçar sozinhos ou podem caçar em grupos cooperativos de até quatro jogadores através dos serviços on-line do jogo.</p>
+        <p>Anunciado na E3 2017, Monster Hunter: World adotou as formulas de seus jogos antigos. Mudanças feitas no Monster Hunter: World inclui a criação de espaços ambientais totalmente conectados e a remoção das "zonas" que eram necessárias nos jogos para o PlayStation 2 e jogos portáteis, inteligência artificial e físicas dos monstros ficou mais avançados para criar ecossistemas aparentemente vivos que poderiam ser aproveitados durante caças, uma experiência cooperativa multiplayer mais persistente e um aprimoramento da interface do usuário do jogo, sistemas de menu e tutoriais para ajudar a trazer novos jogadores para a série. Essas mudanças levaram a Capcom a planejar o lançamento simultâneo do jogo em mercados japoneses e ocidentais, já que Monster Hunter, como uma série, geralmente definiu no Ocidente, em comparação com o Japão em parte devido a horários de lançamento diferentes. A Capcom também optou por apoiar o jogo online entre essas diferentes regiões geográficas por motivos semelhantes. O atraso para o lançamento do Windows foi atribuído à Capcom, procurando garantir que sua primeira incursão no mercado do Windows fosse otimizada para os jogadores nos computadores.</p>
+        <p>Monster Hunter: World recebeu elogios da crítica após a liberação do jogo, com críticas ao louvar como a Capcom conseguiu tornar o jogo mais acessível aos novos jogadores e aos mercados ocidentais, sem prejudicar os principais elementos da jogabilidade da série e dificuldades divertidas e aproveitar o plenamente capacidade computacional de consoles mais modernos para criar ecossistemas vivos. Dentro de algumas semanas do lançamento, o jogo tornou-se o jogo mais vendido na história da Capcom com mais de seis milhões de cópias enviadas. No momento, já são 7,5 milhões de copias vendidas no mundo todo, nas plataformas Xbox One e Playstation 4. </p>
+      </blockquote>
+      </div>   
+    </div>
+  </div>
+</body>
+</html>

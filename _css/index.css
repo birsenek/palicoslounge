@@ -1,0 +1,45 @@
+
+    .jumbotron {
+        height: 150px;
+        background-color:antiquewhite;
+        margin-top: -3%;
+    }
+    body {
+        background-color:beige;
+    }
+     @font-face {
+        font-family: 'monster_hunterregular';
+        src: url('../_fonts/MH/monster_hunter_type_2-webfont.woff2') format('woff2'),
+            url('../_fonts/MH/monster_hunter_type_2-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .carousel-caption {
+        position: absolute;
+        top: auto;
+        left:auto; right: auto;
+        color: white;
+        background-color: rgba(0,0,0,.8);
+        width: 100%; height: 30%;
+        padding: 2px;
+        box-sizing: border-box;
+        opacity: .6;
+        transition: opacity 1s;
+     }
+    .carousel-caption:hover {
+        opacity: 1;
+     }
+    .titulo {
+        font-family: 'monster_hunterregular'; text-decoration: underline;
+    }
+    .destaque_card:hover {
+            transform: scale(1.1);
+            transition: .7s;
+    }
+    .card_map {
+            margin-right: auto; margin-left: auto;
+	}
+	.img_tbl:hover {
+		transform: scale(2.0);
+		transition: .7s;
+	}

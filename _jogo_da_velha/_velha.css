@@ -1,0 +1,69 @@
+.jumbotron {
+    height: 150px;
+    background-color:antiquewhite;
+    margin-top: -3%;
+}
+body {
+    background-color:beige;
+}
+ @font-face {
+    font-family: 'monster_hunterregular';
+    src: url('../_fonts/MH/monster_hunter_type_2-webfont.woff2') format('woff2'),
+        url('../_fonts/MH/monster_hunter_type_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ }
+ .titulo{
+     font-family: 'monster_hunterregular';
+ }
+.tabela1 {
+    border-collapse: collapse; font-size: 15px; margin: auto;
+}
+.tabelajogo {
+    border-collapse: collapse; font-size: 40px; margin: auto;
+}
+.tabela1 td {
+    padding: 20px;
+}
+.tabelajogo td {
+    padding: 20px;
+}
+.tabela1 #_1 {
+   border:solid; border-top: 0px; border-left-width: 0px; 
+}
+.tabela1 #_2 {
+    border:solid; border-top: 0px; border-left-width: 0px; 
+}
+.tabela1 #_3 {
+    border:solid; border-top: 0; border-right: 0;
+}
+.tabela1 #_1a {
+    border:solid; border-top: 0px; border-left-width: 0px; border-bottom: 0px;
+}
+.tabela1 #_2a {
+    border:solid; border-top: 0px; border-left: 0; border-bottom: 0px;
+}
+.tabela1 #_3a {
+    border:solid; border-top: 0px; border-right: 0; border-bottom: 0px;
+}
+.tabelajogo #_1 {
+    border:solid; border-top: 0px; border-left-width: 0px; 
+ }
+ .tabelajogo #_2 {
+     border:solid; border-top: 0px; border-left-width: 0px; 
+ }
+ .tabelajogo #_3 {
+     border:solid; border-top: 0; border-right: 0;
+ }
+ .tabelajogo #_1a {
+     border:solid; border-top: 0px; border-left-width: 0px; border-bottom: 0px;
+ }
+ .tabelajogo #_2a {
+     border:solid; border-top: 0px; border-left: 0; border-bottom: 0px;
+ }
+ .tabelajogo #_3a {
+     border:solid; border-top: 0px; border-right: 0; border-bottom: 0px;
+ }
+.jogada {
+    width: 50px;
+}

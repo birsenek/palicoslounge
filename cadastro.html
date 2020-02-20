@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Palico´s Lounge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="_css/index.css">
+</head>
+<body>
+
+    <!--Menu de Navegação-->
+  <div class="navbar_menu">
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+      <a class="navbar-brand" href="index.html" style="font-family:'monster_hunterregular';">Palico´s Lounge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mapa.html">Encontros Presenciais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loja.html">Loja Virtual</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Caçadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+          </li>   
+        </ul>
+      </div>  
+    </nav>
+  </div>
+
+    <!-- JUMBOTRON-->
+  <div class="jumbotron text-center">
+    <h1 class="titulo">Palico's Lounge</h1>
+    <p style="text-decoration:underline" style="font-family: sans-serif;">A maior comunidade brasiliera de Monster Hunter World</p> 
+  </div> 
+
+    <div class="container">
+        <div class="row">
+            <form method="get" action="http://localhost/palicos_lounge/dadoscadastrais.php">
+                <p>Nome: <input type="text" name="nome"><br></p>
+                <p>Ano de Nascimento: <input type="number" name="idade"><br></p>
+                <p><fieldset class="border p-2 m-2 border-dark"><legend class="w-auto">Sexo:</legend>
+                    <input type="radio" name="sexo" id="masc" value="masculino">
+                    <label for="masc">Masculino</label><br>
+                    <input type="radio" name="sexo" id="fem" value="feminino">
+                    <label for="fem">Feminino</label><br>
+                    <input type="radio" name="sexo" id="none" value="none">
+                    <label for="none">Outro</label><br>
+                </fieldset></p><br>
+                <input type="submit" value="Enviar">
+              </form>
+        </div  >
+    </div>
+</body> 
+</html>

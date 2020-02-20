@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Jogo da Velha</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="_velha.css">
+  </head>
+
+  <body> 
+      <!--Menu de Navegação-->
+  <div class="navbar_menu">
+        <nav class="navbar navbar-expand-xl bg-dark navbar-dark">
+          <a class="navbar-brand" href="../index.html" style="font-family:'monster_hunterregular';">Palico´s Lounge</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../mapa.html">Encontros Presenciais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../loja.html">Loja Virtual</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../videos.html">Caçadas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../_jogo_da_velha/jogo_da_velha.html">Jogue Agora</a>
+              </li>   
+            </ul>
+          </div>  
+        </nav>
+      </div>
+    
+        <!-- JUMBOTRON-->
+      <div class="jumbotron text-center">
+        <h1 class="titulo">Palico's Lounge</h1>
+        <p style="text-decoration:underline" style="font-family: sans-serif;">A maior comunidade brasiliera de Monster Hunter World</p> 
+      </div>
+
+    <script src="_velha.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">    
+                <h1>Jogo da Velha</h1>
+                    <ul>
+                        Regras:
+                        <li>O primeiro jogador recebe o símbolo "X" e o segundo jogador, o símbolo "O";</li>
+                        <li>Cada jogador possui um turno onde deverá escolher uma posição não ocupada para colocar seu símbolo;</li>
+                        <li>Vence o jogador que completar uma sequência de três símbolos consecutivos;</li>
+                    </ul>    
+                </div>
+            <div class="col-xl-6">
+                <h1>Posições válidas de jogada</h1>
+                <table class="tabela1">
+                    <tr><td id="_1">1</td><td id="_2">2</td><td id="_3">3</td></tr>
+                    <tr><td id="_1">4</td><td id="_2">5</td><td id="_3">6</span></td></tr>
+                    <tr><td id="_1a">7</td><td id="_2a">8</td><td id="_3a">9</td></tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="col-xl-6">
+                <br>
+                <p>Jogador 1: X</p> 
+                <p>Jogador 2: O</p>
+                <p>Insira sua posição de jogada: <input class="jogada" type="number" max="9" min="1" id="position"></p>
+                <button id="button" onclick="jogo()">Jogar</button> 
+                <p><span id="fimdejogo"></span></p>      
+            </div>
+            <div class="col-xl-6"> 
+                <table class="tabelajogo">
+                    <tr><td id="_1"><span id="pos1"></span></td><td id="_2"><span id="pos2"></span></td><td id="_3"><span id="pos3"></span></td></tr>
+                    <tr><td id="_1"><span id="pos4"></span></td><td id="_2"><span id="pos5"></span></td><td id="_3"><span id="pos6"></span></td></tr>
+                    <tr><td id="_1a"><span id="pos7"></span></td><td id="_2a"><span id="pos8"></span></td><td id="_3a"><span id="pos9"></span></td></tr>
+                </table>   
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
